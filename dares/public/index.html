@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BYU DARES</title>
+<link rel="stylesheet" href="./stylesheets/style.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js"></script>
+</head>
+
+
+<body background="https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    
+    <h1>BYU DARES</h1>
+    
+    <form>
+  <button type="button" id="QUESTIONS">get dare</button>
+
+
+ 
+<br>
+<p id="txt"></p>
+</form>
+ 
+ 
+ <br>
+ <br>
+ <br>
+
+    
+    
+    
+    
+<form id="commentForm" action="">
+
+<h3>Submit a dare and I might add it to the mix :)</h3>
+<label for="comment"> </label><input type="text" id="comment" placeholder="type your dare here">
+</form>
+
+
+
+<button id="postComment">Submit</button>
+
+
+
+
+
+
+
+
+<div id="json"></div>
+<div id="done"></div>
+<div id="comments"></div>
+<div id="queryResults"></div>
+
+
+<script>
+
+$( "#QUESTIONS" ).click(function() {
+ 
+  var rand = Math.floor(Math.random() * 25);
+  var url = "getquestion?q="+rand.toString();
+  $.get(url,function(data) {
+      console.log(data);
+    var toDisplay = data[0].question;
+    
+    var everything = "<p>"
+    everything += toDisplay;
+    everything+="</p>";
+    $("#txt").html(everything);
+    
+  
+    
+    
+
+  });
+});
+
+ 
+    
+    
+   </script>
+   <script src="index.js"> </script>
+
+
+ 
+ 
+ 
+ 
+ 
+ </body>
+ 
+ </html>

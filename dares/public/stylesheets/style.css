@@ -1,0 +1,89 @@
+body {
+  padding: 50px;
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnoEFyHcMOsnGy2LprSwyDZsbhkB-QtXMTif4XWbkEijE8e0mog");
+background-size: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#commentForm{
+   text-align: center;
+}
+
+
+#postComment{
+        height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    
+}
+#getComments{
+       height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+
+}
+#deleteComments{
+       height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+#queryComment{
+       height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+
+}
+
+h1{
+  color: Navy;
+  font-size: 50px;
+}
+
+#QUESTIONS{
+    padding: 5px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 1px;
+    font-size: 30px;
+    border: solid;
+    border-color: navy;
+    border-width: 10px;
+    border-radius: 17px;
+    opacity: .8;
+    color: navy;
+    text-align: center;
+    position:relative;
+}
+
+
+#txt{
+    padding: 0px;
+    background-color: navy;
+    display: inline-block;
+   /* margin-bottom: 1px;
+   */
+    font-size: 30px;
+    border: solid;
+    border-color: lightblue;
+    border-width: 10px;
+    border-radius: 17px;
+    opacity: .8;
+    color: white;
+}
